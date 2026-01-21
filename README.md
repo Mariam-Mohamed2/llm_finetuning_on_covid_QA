@@ -148,7 +148,7 @@ This setup reflects a real-world production-style fine-tuning workflow.
 **Fine-tuning method:**  
 - LoRA (Low-Rank Adaptation)  
 - Efficient and memory-friendly  
-- Only **3 epochs**, proving fast domain adaptation capability  
+- Only **4 epochs**, proving fast domain adaptation capability  
 
 **Training monitoring (Weights & Biases):**  
 All training curves and loss dynamics can be viewed from the run link below:
@@ -161,7 +161,7 @@ All training curves and loss dynamics can be viewed from the run link below:
 
 **Final training loss (from W&B):**
 ```python
-{'loss': 0.9536, 'grad_norm': 0.3893, 'learning_rate': 9.23e-05, 'epoch': 1.2}
+{'loss': 0.5405, 'epoch': 4}
 ```
 
 ---
