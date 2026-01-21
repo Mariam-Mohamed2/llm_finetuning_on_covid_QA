@@ -165,7 +165,7 @@ All training curves and loss dynamics can be viewed from the run link below:
 ```
 
 ---
-# 2. Deployment Notebook 
+# Second: Deployment Notebook 
 
 This notebook implements a **FastAPI-based deployment** for serving the fine-tuned COVID-19 QA model with LoRA adaptation.
 
