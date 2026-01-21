@@ -164,6 +164,14 @@ All training curves and loss dynamics can be viewed from the run link below:
 {'loss': 0.5405, 'epoch': 4}
 ```
 
+## 7. Evaluation 
+
+Automated evaluation metrics after fine-tuning:
+
+- **Average Latency:** 7.65 sec / sample  
+- **Throughput:** 0.13 samples / sec  
+- **ROUGE-L Score:** 0.6489  
+- **BLEU Score:** 0.6121
 ---
 # Second: Deployment Notebook 
 
