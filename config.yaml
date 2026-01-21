@@ -1,0 +1,30 @@
+project_name: "covid-vaccine-qa"
+domain: "COVID-19 vaccine side effects"
+use_case: "question-answering"
+description: "End-to-end pipeline for building a QA system over COVID-19 vaccine safety literature using small LLM fine-tuning."
+
+
+# Data Source
+data_directory: "data/raw/"
+output_directory: "data/llamafactory-finetune-data/"
+
+pdfs:
+  - "Clinical Analysis of Long Post-COVID Vaccination Syndrome (LPCVS).pdf"
+  - "covid_side_effects.pdf"
+  - "COVID_Vaccine_Neuro_Effects.pdf"
+  - "COVID_Vaccine_Safety_Facts.pdf"
+  - "jj_vaccine_risks.pdf"
+  - "Long_Term_Side_Effects_Medics.pdf"
+  - "Pfizer_Platelet_LongTerm_Study.pdf"
+  - "Rare_Vaccine_Side_Effects.pdf"
+  - "Vaccine_Efficacy_Omicron_vs_Delta.pdf"
+  - "WHO_XEC_Variant_Risk.pdf"
+
+# Model Settings
+base_model: "Qwen/Qwen2.5-1.5B-Instruct"
+device: "cuda"
+
+
+# Evaluation
+metrics: ["rouge", "bleu", "llm-judge"]
+monitoring: "weights_and_biases"
