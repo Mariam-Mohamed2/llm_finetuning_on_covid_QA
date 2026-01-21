@@ -28,9 +28,7 @@ This repository contains two core notebooks:
 > Large files are hosted externally on Drive
 > You can download them from Google Drive:
 
- **Google Drive:**  
-[<Drive Link>](https://drive.google.com/drive/folders/1_GzXpxDDuF7W4kQw4wsC-4QCgbmBihNW?usp=drive_link)
-
+**Google Drive:** [Drive Link](https://drive.google.com/drive/folders/1_GzXpxDDuF7W4kQw4wsC-4QCgbmBihNW?usp=drive_link)
 After downloading, place the contents inside:
 
 
