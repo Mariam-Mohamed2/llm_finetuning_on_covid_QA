@@ -164,14 +164,17 @@ All training curves and loss dynamics can be viewed from the run link below:
 {'loss': 0.5405, 'epoch': 4}
 ```
 
-## 7. Evaluation 
+## 7. Evaluation
 
-Automated evaluation metrics after fine-tuning:
+Benchmark comparison between Base Model and Fine-Tuned Model:
 
-- **Average Latency:** 7.65 sec / sample  
-- **Throughput:** 0.13 samples / sec  
-- **ROUGE-L Score:** 0.6489  
-- **BLEU Score:** 0.6121
+| Model            | ROUGE-L | BLEU   | Latency (sec/sample) | Throughput (samples/sec) |
+|-----------------|---------|--------|--------------------|-------------------------|
+| Base_Model       | 0.308   | 0.294  | 3.60               | 0.278                   |
+| FineTuned_Model  | 0.672   | 0.695  | 6.25               | 0.160                   |
+
+- The LoRA fine-tuned model shows a significant improvement in answer quality, with ROUGE-L increasing by **~118%** and BLEU by **~136%** compared to the base model. There is a moderate increase in latency and slight decrease in throughput, which is acceptable given the large gain in performance.
+
 ---
 # Second: Deployment Notebook 
 
